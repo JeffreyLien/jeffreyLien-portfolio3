@@ -1,4 +1,4 @@
-# Recruiter Navigation
+# Project Navigation
 
 1. `README.md`
 2. `notebooks/00_executive_case_study.ipynb`
@@ -7,4 +7,4 @@
 5. `sql/`
 6. `docs/EXECUTIVE_RECOMMENDATIONS.md`
 
-The repository is ordered so a nontechnical reviewer gets the case, outputs, and business value before implementation detail.
+The repository is ordered so the analytical story and major outputs are visible before implementation detail.
