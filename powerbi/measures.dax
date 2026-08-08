@@ -1,0 +1,29 @@
+Enrolled Students =
+DISTINCTCOUNT(mart_student_term[student_id])
+
+Attempted Credits =
+SUM(mart_student_term[credits_attempted])
+
+Completed Credits =
+SUM(mart_student_term[credits_completed])
+
+Credit Completion Rate =
+DIVIDE([Completed Credits], [Attempted Credits])
+
+Next-Term Persistence Rate =
+CALCULATE(
+    AVERAGE(mart_student_term[enrolled_next_term]),
+    mart_student_term[eligible_for_next_term] = 1
+)
+
+High Risk Student-Terms =
+CALCULATE(
+    COUNTROWS(mart_student_term),
+    mart_student_term[risk_tier] = "High"
+)
+
+Withdrawal Rate =
+DIVIDE(
+    SUM(mart_student_term[withdrawals]),
+    SUM(mart_student_term[courses_attempted])
+)

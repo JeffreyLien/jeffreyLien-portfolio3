@@ -1,0 +1,11 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
+database/*.db
+data/raw/*.csv
+data/processed/*.csv
+exports/executive_student_term.csv
+exports/student_feedback_themes.csv
+exports/feedback_themes.csv
