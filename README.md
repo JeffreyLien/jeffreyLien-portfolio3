@@ -2,7 +2,7 @@
 
 **Student Success · Data Quality · External Reporting · Decision Support**
 
-A recruiter-ready analytics case study aligned to a **Data Analyst, Level I — Institutional Research** role.
+A self-contained institutional research analytics project covering student success, data quality, academic performance, student-support operations, and external reporting.
 
 ![Dashboard Preview](assets/dashboard_preview.png)
 
@@ -64,17 +64,15 @@ The mock external submission passes all six readiness checks: **0 duplicate repo
 4. Combine recurring quantitative outcome reviews with structured student-feedback themes.
 5. Require a documented QA/reconciliation checklist before external submissions are released.
 
-## Why this project fits the role
-The target job supports leadership, faculty, staff, Student Affairs, academics, and external entities through:
-- validating and cleaning data,
-- quantitative and qualitative analysis,
-- data mining,
-- external data submissions,
-- decision-support reporting,
-- data visualization,
-- Excel and SQL.
+## Project scope
 
-This repository demonstrates each responsibility with synthetic data.
+The work follows an institutional-research reporting cycle from source data through decision support:
+
+- validate and clean student, enrollment, advising, financial-aid, and feedback data;
+- build a relational analytical warehouse and reusable reporting datasets;
+- analyze persistence, academic performance, student support, and qualitative feedback;
+- prepare and reconcile an external-reporting extract;
+- communicate findings through notebooks, Excel, Power BI-ready measures, and visual summaries.
 
 ## Portfolio at a glance
 
@@ -118,6 +116,10 @@ uagc_institutional_research_portfolio/
 │   └── Institutional_Research_Reporting_Package.xlsx
 ├── powerbi/
 ├── docs/
+│   ├── PROJECT_SCOPE.md
+│   ├── EXECUTIVE_RECOMMENDATIONS.md
+│   ├── DATA_DICTIONARY.md
+│   └── EXTERNAL_SUBMISSION_QC.md
 └── exports/
 ```
 
@@ -125,13 +127,6 @@ Large row-level synthetic datasets and the generated SQLite database are intenti
 
 ## Notebook-first design
 There are **no Python `.py` scripts**. Every Python workflow file is an `.ipynb` notebook.
-
-## Resume-ready entry
-
-**Institutional Research & Student Success Analytics | SQL, Python, Excel, Power BI**
-
-- Built an end-to-end institutional research workflow across **25K synthetic student records**, integrating enrollment, course, advising, financial-aid, and student-feedback data to support persistence, academic, Student Affairs, and external-reporting decisions.
-- Developed **SQL reporting marts, automated data-quality and submission QA checks, cohort/persistence analyses, qualitative feedback summaries, and an Excel/Power BI reporting package** to identify retention gaps, high-withdrawal courses, and student-support priorities.
 
 ## Privacy & interpretation
 All records are synthetic. Descriptive relationships are reported as observed associations, not causal effects. In production, student-level reporting would require strict access controls and FERPA/institutional privacy procedures.
